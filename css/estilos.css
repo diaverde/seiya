@@ -1,0 +1,268 @@
+/* --- Estilos globales --- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', Lato, Tahoma, sans-serif;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- Navbar --- */
+nav {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  text-align: center;
+  background-color:rgb(250,250,250);
+}
+
+nav a {
+  text-decoration: none;
+  color:#111;
+}
+
+nav a:hover {
+  background-color:rgb(220,220,230);
+}
+
+/* --- Contenido principal --- */
+.main-content {
+  padding-top: 2rem;
+  color: #3c4172;
+}
+
+.intro .title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: #00d1b2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.button {
+  width: 50%;
+  margin: auto;
+}
+
+.icon {
+  display: inline;
+  background: #00d1b2;
+  border-radius: 50%;
+  line-height: 80px;
+  padding: 20px;
+}
+
+.main-content .any-section {
+  padding: 50px;
+}
+
+.main-content .any-section .title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-content .any-section .subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-content .any-section p {
+  margin-bottom: 10px;
+}
+
+.learn-more {
+  color: #00d1b2;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.testimonios h4 {
+  text-align: right;
+  margin-bottom: 50px;;
+}
+  
+.foto {
+  width: 50%;
+  margin: auto;
+}
+
+.foto img {
+  border-radius:50%;
+}
+
+.contacto label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contacto input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid;
+}
+
+.contacto textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contacto button {
+  margin-top: 30px;
+}
+
+/* --- Footer --- */
+footer {
+  bottom: 0;
+  padding: 0;
+  height: 80px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 2rem;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  
+  nav img {
+    max-height: 50px;
+    margin: 5px;
+  }
+  
+  .intro img {
+    max-width: 100%;
+  }
+
+  .intro {
+    margin: 40px;
+  }
+  
+  .image {
+    margin: 30px;
+  }
+
+  .nosotros img {
+    max-width: 100%;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  nav {
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  }
+  
+  nav a {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  
+  nav img {
+    max-width: 100px;
+    margin: 10px;
+  }
+
+  .intro img {
+    max-width: 100%;
+  }
+
+  .intro {
+    margin: 40px;
+  }
+  
+  .image {
+    margin: 30px;
+  }
+
+  .main-content .any-section .right-text {
+    padding-left: 100px;
+  }
+
+  .nosotros img {
+    max-width: 100%;
+  }
+
+  .filosofia {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .testimonios {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    row-gap: 10px;
+  }
+
+  .contacto {
+    width: 500px;
+    margin: 0 auto;
+  } 
+}
+
+@media (min-width: 992px) {
+  .main-content .intro {
+    display: flex;
+    display: -ms-flex;
+    flex-direction: row;
+  }
+  
+  .main-content .intro .first {
+    order: 2;
+  }
+  
+  .main-content .intro .second {
+    order: 1;
+  }
+
+  .intro img {
+    max-width: 600px;
+  }
+
+  .main-content .nosotros {
+    display: flex;
+    display: -ms-flex;
+    flex-direction: row;
+  }
+  
+  .filosofia {
+    grid-template-columns: auto auto auto;
+  }
+
+  .nosotros img {
+    max-width: 600px;
+  } 
+}
